@@ -29,7 +29,9 @@
                 <th scope="col">Nama lengkap</th>
                 <th scope="col">Alamat</th>
                 <th scope="col">Email</th>
+                @can('is_admin')
                 <th scope="col">Keterangan</th>
+                @endcan
             </tr>
         </thead>
         <tbody>
@@ -40,6 +42,7 @@
                 <td>{{$data->nm_lengkap}}</td>
                 <td>{{$data->alamat}}</td>
                 <td>{{$data->email}}</td>
+                @can('is_admin')
                 <td>
                     <div class="d-flex justify-content-center gap-3">
                         <div class="edit">
@@ -54,6 +57,7 @@
                         </div>
                     </div>
                 </td>
+                @endcan
             </tr>
             @endforeach
         </tbody>

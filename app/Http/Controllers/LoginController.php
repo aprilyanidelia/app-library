@@ -30,10 +30,9 @@ class LoginController extends Controller
     
         if (Auth::attempt($credentials)) {
             $user=Auth::user();
-                if($user->role == 'admin'){
+                if($user->role == 'admin'||'petugas'){
                     return redirect()->intended('/dashboard');
                 }
-
                 return back()->with('error', 'Anda tidak memiliki akses');
         }
 

@@ -3,7 +3,7 @@
 @section('container')
 
 <div class="mb-3">
-  <h3 class="fw-bold fs-4 mb-3">Admin Dashboard</h3>
+  <h3 class="fw-bold fs-4 mb-3">Dashboard {{auth()->user()->role}}</h3>
   <div class="row">
     <div class="col-12 col-md-4 ">
       <div class="card border-0">
