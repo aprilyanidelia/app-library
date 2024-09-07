@@ -19,6 +19,9 @@ class LoginController extends Controller
     public function admin(){
         return view('login.admin');
     }
+    public function staff(){
+        return view('login.staff');
+    }
 
     public function authenticate(Request $request)
     {
@@ -30,7 +33,32 @@ class LoginController extends Controller
     
         if (Auth::attempt($credentials)) {
             $user=Auth::user();
-                if($user->role == 'admin'||'petugas'){
+                if($user->role == 'admin'){
+                    return redirect()->intended('/dashboard');
+                }
+                return back()->with('error', 'Anda tidak memiliki akses');
+        }
+
+        $user= User::where('username', $credentials['username'])->first();
+
+        if(!$user){
+            return back()->with('error','Akun tidak ditemukan');
+        }
+
+        return back()->with('error','Password atau username salah');
+
+    }
+    public function authenticate_staff(Request $request)
+    {
+        $credentials = $request->validate([
+            'username'=>'required|max:255',
+            'password'=>'required|min:5',
+        ]);
+
+    
+        if (Auth::attempt($credentials)) {
+            $user=Auth::user();
+                if($user->role == 'petugas'){
                     return redirect()->intended('/dashboard');
                 }
                 return back()->with('error', 'Anda tidak memiliki akses');

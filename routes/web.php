@@ -36,6 +36,9 @@ Route::post('/login/user', [LoginController::class,'authenticate_user'])->name('
 Route::get('/login/admin', [LoginController::class,'admin']);
 Route::post('/login/admin', [LoginController::class,'authenticate'])->name('login.authenticate');
 
+Route::get('/login/staff', [LoginController::class,'staff']);
+Route::post('/login/staff', [LoginController::class,'authenticate_staff'])->name('login.authenticate_staff');
+
 Route::post('/', [LoginController::class,'logout']);
 
 Route::get('/register', [RegisterController::class,'index']);
@@ -64,6 +67,7 @@ Route::group(['middleware'=>'auth'], function(){
     Route::put('/dashboard/{dashboard}',[Buku2Controller::class,'update'])->name('buku.update');
     Route::delete('/dashboard/{dashboard}',[Buku2Controller::class,'destroy'])->name('dashboard.destroy');
     Route::get('/data_user',[Buku2Controller::class,'data']);
+    Route::get('/data_staff',[Buku2Controller::class,'data_staff']);
 
     Route::get('/kategori',[CategoryController::class,'index'])->name('kategori.index');
     Route::post('/kategori',[CategoryController::class,'store'])->name('kategori.store');

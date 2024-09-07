@@ -91,7 +91,7 @@
           </div>
         <button type="submit" class="btn btn-dark w-100 mb-3 mt-3">Submit</button>
       </form>
-      <a href="/login/siswa" class="fw-bold" style="text-decoration: none;" >
+      <a href="/" class="fw-bold" style="text-decoration: none;" >
       <button type="submit" class="btn btn-outline-secondary w-100 ">Back</button>
       </a>
 

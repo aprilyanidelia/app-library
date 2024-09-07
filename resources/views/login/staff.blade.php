@@ -54,7 +54,7 @@
             @endif
 
 
-            <form method="post" action="/login/admin">
+            <form method="post" action="/login/staff">
               @csrf
           <div class="form-floating mb-3">
               <input type="text" name="username" id="floatingInput" class="form-control" autofocus required value="{{old('username')}}" placeholder="Username">

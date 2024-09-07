@@ -56,18 +56,38 @@
                         <span>Kategori</span>
                     </a>
                 </li>
+                @can('is_admin')
+                <li class="sidebar-item">
+                    <a href="" class="sidebar-link">
+                        <i class='bx bxs-book-bookmark'></i> 
+                        <span>Laporan petugas</span>
+                    </a>
+                </li>
+                @endcan
+                @can('is_admin')
+                <li class="sidebar-item">
+                    <a href="/data_staff" class="sidebar-link">
+                      <i class='bx bxs-user'></i> 
+                        <span>Data Petugas</span>
+                    </a>
+                </li>
+                @endcan
+                @can('is_staff')
                 <li class="sidebar-item">
                     <a href="/pengembalian" class="sidebar-link">
                         <i class='bx bxs-book-bookmark'></i> 
                         <span>Laporan</span>
                     </a>
                 </li>
+                @endcan
+                @can('is_staff')
                 <li class="sidebar-item">
                     <a href="/ulasan" class="sidebar-link">
                       <i class='bx bxs-store' ></i>
                         <span>Ulasan</span>
                     </a>
                 </li>
+                @endcan
             </ul>
             <div class="sidebar-footer">
                 <a href="/" class="sidebar-link">

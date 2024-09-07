@@ -130,4 +130,8 @@ class Buku2Controller extends Controller
         ]);
     }
 
+    public function data_staff(){
+        return view('dashboard.staff.dataStaff');
+    }
+
 }
