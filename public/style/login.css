@@ -12,10 +12,10 @@
     }
     .navbar{
         background-color: #fff;
-        height: 65px;
+        /* height: 65px;
         margin: 20px;
         border-radius: 16px;
-        padding: 0.5rem;
+        padding: 0.5rem; */
     }
     .navbar-brand{
         font-weight: 500;
@@ -121,11 +121,11 @@
         margin-left: 10px;
     }
 
-    .book{
+    /* .book{
         height: 100vh;
         width: 100%;
         background-color: #fff;
-    }
+    } */
 
     .kotak{
         padding: 60px;
@@ -161,13 +161,14 @@
         transform: scale(1.1);
     }
 
-    footer{
+    .akhir{
         height: 300px;
         width: 100%;
-        background-color: black;
+        background-color: #FCDE70;
+        color: white;
     }
 
-    .long{
+    /* .long{
         background-color: #666777;
     height: 150px;
     position: absolute;  
@@ -175,18 +176,17 @@
     z-index: 1;       
     width: 80%;
     border-radius: 10px;
-    }
+    } */
 
     .about{
-        height: 500px;
+        height: 100%;
         width: 100%;
-        background-color: hsl(0, 100%, 50%);
         margin-top: 10%;
         border-radius: 10px;
     }
 
 
-    @media (max-width: 768px) {
+    /* @media (max-width: 768px) {
         .long {
             width: 90%;             
             top: 85%;               
@@ -195,4 +195,4 @@
             right: 5%;
             border-radius: 8px;     
         }
-    }
+    } */

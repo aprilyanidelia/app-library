@@ -18,7 +18,7 @@
   <body>
 
 
-    <nav class="navbar navbar-expand-lg fixed-top shadow">
+    <nav class="navbar navbar-expand-lg fixed-top shadow" id="navbar">
         <div class="container">
           <a class="navbar-brand me-auto" href="#"><i class='bx bx-book-reader'></i></a>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -27,22 +27,18 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link mx-lg-2" aria-current="page" href="#beranda">BERANDA</a>
                 </li>
                 <li class="nav-item mx-lg-2">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#tentang">TENTANG</a>
                 </li>
                 <li class="nav-item mx-lg-2">
-                  <a class="nav-link" href="#">All book</a>
+                  <a class="nav-link" href="#buku">BUKU</a>
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="d-flex gap-2">
-            <a href="/login/user" class="login-button">Sign In</a>
-            <a href="/register" class="login-button">Sign Up</a>
           </div>
           <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,78 +46,89 @@
         </div>
       </nav>
     
-      <div class="main">
+      <div class="main" id="beranda">
         <div class="teks">
           <div class="judul">
             <h1>Selamat datang di aplikasi perpustakaan</h1>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sunt.</span><br><br>
+            <span>Kami berkomitmen untuk menyediakan akses yang mudah dan nyaman terhadap informasi dan pengetahuan bagi seluruh anggota masyarakat.</span><br><br>
             <div class="row">
               <div class="col-lg-12 col-md-12">
-              <div class="form-floating mb-3 clearfix">
-                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Cari disini...</label>
-              </div>
+                <a href="/login/user">
+                  <button type="submit" class="btn btn-light" style="padding:5px 30px;">Login</button>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="container" >
-        <div class="long">
-          <h1>hi</h1>
-        </div>
-      </div>
-
-      <div class="m-4">
+      <div class="m-4" id="tentang">
         <div class="about">
-          <div class="p-5">
-            <div class="row">
+          <div class="p-5" style="background-color:#FCDE70; border-radius:15px;">
+            <div class="row d-flex align-items-center">
               <div class="col-lg-5 col-md-12">
-              <img src="{{asset('/image/about.png')}}" class="img-fluid rounded" alt="" style="height: 500px; width: 100%;">
+              <img src="{{asset('/image/about.png')}}" class="img-fluid rounded" alt="" >
               </div>
               <div class="col-lg-7 col-md-12">
-                <div class="d-flex align-items-center" style="height:400px;">
                   <div>
-                    <h2>About</h2>
-                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eveniet, omnis aliquid odio id iusto similique? Repudiandae, excepturi illum? Exercitationem quibusdam assumenda ipsa officia fugiat dolorum, suscipit tempora saepe inventore eveniet architecto, vel amet ea animi, quam expedita recusandae placeat commodi eius. Accusamus quisquam sed laboriosam. Consequatur aut dolores velit.</h6>
+                    <h2>Tentang Aplikasi</h2>
+                    <p>Aplikasi perpustakaan adalah sebuah platform digital yang memungkinkan pengguna mengakses koleksi perpustakaan secara online. Dengan aplikasi ini, pengguna dapat mencari buku, jurnal, atau media lainnya, melakukan peminjaman, perpanjangan, dan pengembalian secara digital, serta mendapatkan notifikasi mengenai status peminjaman. Selain itu, aplikasi ini juga seringkali dilengkapi dengan fitur-fitur tambahan seperti e-book reader, daftar bacaan, dan rekomendasi buku berdasarkan minat pengguna.</p>
                   </div>
-                </div>
               </div>
               </div>
           </div>
         </div>
       </div>
 
-      <div class="book mt-3">
+      <div class="book mt-3" id="buku">
         <div class="kotak">
           <div class="box">
             <h1>Semua buku</h1>
             <div class="row">
-              <div class="col-lg-3 py-3 col-md-6">
-                <img src="{{asset('/image/book.jpg')}}" class="img-fluid rounded" alt="">
+              <div class="col-lg-2 py-3 col-sm-4 col-6">
+              <a href="https://ibb.co.com/HxD3kmm"><img src="https://i.ibb.co.com/LJzH244/buku-1.webp" alt="buku-1" class="img-fluid rounded" border="0"></a>
+              
               </div>
-              <div class="col-lg-3 py-3 col-md-6 ">
-                <img src="{{asset('/image/book.jpg')}}" class="img-fluid rounded" alt="">
+              <div class="col-lg-2 py-3 col-sm-4 col-6 ">
+              <a href="https://ibb.co.com/2Sm5X1s"><img src="https://i.ibb.co.com/C6NWx3M/buku-4.webp" alt="buku-4" class="img-fluid rounded" border="0"></a>
               </div>
-              <div class="col-lg-3 py-3 col-md-6 ">
-                <img src="{{asset('/image/book.jpg')}}" class="img-fluid rounded" alt="">
+              <div class="col-lg-2 py-3 col-sm-4 col-6 ">
+              <a href="https://ibb.co.com/86mjxXy"><img src="https://i.ibb.co.com/nzwD1RX/buku-5.jpg" alt="buku-5" class="img-fluid rounded" border="0"></a>
+
               </div>
-              <div class="col-lg-3 py-3 col-md-6 ">
-                <img src="{{asset('/image/book.jpg')}}" class="img-fluid rounded" alt="">
+              <div class="col-lg-2 py-3 col-sm-4 col-6 ">
+              <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/L8MTVFg/the-siren.jpg" alt="the-siren" border="0" class="img-fluid rounded"></a>
+
+              </div>
+              <div class="col-lg-2 py-3 col-sm-4 col-6 ">
+              <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/tqBFQQr/novel-kata.jpg" alt="novel-kata" class="img-fluid rounded" border="0"></a>
+
+              </div>
+              <div class="col-lg-2 py-3 col-sm-4 col-6 ">
+              <a href="https://ibb.co.com/2P1d846"><img src="https://i.ibb.co.com/jGPDVX5/pahlawan-dan-pecundang-depan.jpg" alt="pahlawan-dan-pecundang-depan" class="img-fluid rounded" border="0"></a>
+
               </div>
             </div>
             <div class="tmbl">
               <div>
-                <button type="button" class="btn">Lihat selengkapnya</button>
+                <a href="/login/user">
+                  <button type="submit" class="btn">Lihat selengkapnya</button>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <footer>
-        
+      <footer class="akhir">
+        <div class="p-5">          
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <h1>Library App</h1>
+              <p> Aplikasi perpustakaan adalah asisten pribadi Anda dalam menemukan buku-buku menarik, melacak status peminjaman, dan mengelola koleksi bacaan Anda.</p>
+            </div>
+          </div>
+        </div>
       </footer>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -129,6 +136,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/15e3ab5c53.js" crossorigin="anonymous"></script>
+    <script src="{{asset('/js/main.js')}}"></script>
 
   </body>
 </html>
