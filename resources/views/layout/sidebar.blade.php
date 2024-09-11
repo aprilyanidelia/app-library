@@ -1,33 +1,4 @@
-    <!-- <div class="bg-white">
 
-      <div class="">
-        <ion-icon name="library-sharp"></ion-icon> Library App
-      </div>
-
-      <div class="list-group list-group-flush my-3">
-        <a >
-          <ion-icon name="home"></ion-icon> Dashboard
-      </a>
-        <a href="/dashboard" class="">
-          <ion-icon name="book"></ion-icon> Data Buku
-        </a>
-        <a href="/kategori" class="">
-          <i class='bx bxs-category-alt'></i> Kategori
-        </a>
-        <a href="/pengembalian" class="">
-          <i class='bx bxs-book-bookmark'></i> Laporan
-        </a>
-        <a href="/ulasan" class="">
-          <i class='bx bxs-store' ></i> Ulasan
-        </a>
-        <a>
-          <form action="/" method="post">
-            @csrf
-            <button class=""><ion-icon name="log-out-outline" ></ion-icon> Log out</button>
-          </form>
-        </a>
-      </div>
-    </div> -->
 
     <div class="d-flex">
                 <button class="toggle-btn" type="button">
@@ -56,22 +27,6 @@
                         <span>Kategori</span>
                     </a>
                 </li>
-                @can('is_admin')
-                <li class="sidebar-item">
-                    <a href="" class="sidebar-link">
-                        <i class='bx bxs-book-bookmark'></i> 
-                        <span>Laporan petugas</span>
-                    </a>
-                </li>
-                @endcan
-                @can('is_admin')
-                <li class="sidebar-item">
-                    <a href="/data_staff" class="sidebar-link">
-                      <i class='bx bxs-user'></i> 
-                        <span>Data Petugas</span>
-                    </a>
-                </li>
-                @endcan
                 @can('is_staff')
                 <li class="sidebar-item">
                     <a href="/pengembalian" class="sidebar-link">

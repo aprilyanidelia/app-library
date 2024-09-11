@@ -24,7 +24,7 @@
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Library App</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button type="button" class="btn-close m-4" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -49,7 +49,7 @@
       <div class="main" id="beranda">
         <div class="teks">
           <div class="judul">
-            <h1>Selamat datang di aplikasi perpustakaan</h1>
+            <h1>Selamat Datang di Aplikasi Perpustakaan</h1>
             <span>Kami berkomitmen untuk menyediakan akses yang mudah dan nyaman terhadap informasi dan pengetahuan bagi seluruh anggota masyarakat.</span><br><br>
             <div class="row">
               <div class="col-lg-12 col-md-12">
@@ -67,7 +67,7 @@
           <div class="p-5" style="background-color:#FCDE70; border-radius:15px;">
             <div class="row d-flex align-items-center">
               <div class="col-lg-5 col-md-12">
-              <img src="{{asset('/image/about.png')}}" class="img-fluid rounded" alt="" >
+              <a href="https://ibb.co.com/mtDHw83"><img src="https://i.ibb.co.com/82KjpcH/about.png" alt="about" border="0" class="img-fluid rounded"></a>
               </div>
               <div class="col-lg-7 col-md-12">
                   <div>
@@ -79,21 +79,20 @@
           </div>
         </div>
       </div>
-
       <div class="book mt-3" id="buku">
         <div class="kotak">
           <div class="box">
-            <h1>Semua buku</h1>
+            <h1 class="text-center">Semua buku</h1>
             <div class="row">
               <div class="col-lg-2 py-3 col-sm-4 col-6">
-              <a href="https://ibb.co.com/HxD3kmm"><img src="https://i.ibb.co.com/LJzH244/buku-1.webp" alt="buku-1" class="img-fluid rounded" border="0"></a>
-              
+              <a href="https://ibb.co.com/tQHDMm3"><img src="https://i.ibb.co.com/n6wjsgR/buku-5.jpg" alt="buku-5" border="0" class="img-fluid rounded"></a>
+
               </div>
               <div class="col-lg-2 py-3 col-sm-4 col-6 ">
-              <a href="https://ibb.co.com/2Sm5X1s"><img src="https://i.ibb.co.com/C6NWx3M/buku-4.webp" alt="buku-4" class="img-fluid rounded" border="0"></a>
+              <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/ch2gk8B/novel-kata.jpg" alt="novel-kata" border="0" class="img-fluid rounded"></a>
               </div>
               <div class="col-lg-2 py-3 col-sm-4 col-6 ">
-              <a href="https://ibb.co.com/86mjxXy"><img src="https://i.ibb.co.com/nzwD1RX/buku-5.jpg" alt="buku-5" class="img-fluid rounded" border="0"></a>
+              <a href="https://ibb.co.com/MChLFqc"><img src="https://i.ibb.co.com/vjB8023/pahlawan-dan-pecundang-depan.jpg" alt="pahlawan-dan-pecundang-depan" border="0" class="img-fluid rounded"></a>
 
               </div>
               <div class="col-lg-2 py-3 col-sm-4 col-6 ">
@@ -101,11 +100,11 @@
 
               </div>
               <div class="col-lg-2 py-3 col-sm-4 col-6 ">
-              <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/tqBFQQr/novel-kata.jpg" alt="novel-kata" class="img-fluid rounded" border="0"></a>
+              <a href="https://ibb.co.com/DzmkfvN"><img src="https://i.ibb.co.com/FmcJ4y9/buku-1.webp" alt="buku-1" border="0" class="img-fluid rounded"></a>
 
               </div>
               <div class="col-lg-2 py-3 col-sm-4 col-6 ">
-              <a href="https://ibb.co.com/2P1d846"><img src="https://i.ibb.co.com/jGPDVX5/pahlawan-dan-pecundang-depan.jpg" alt="pahlawan-dan-pecundang-depan" class="img-fluid rounded" border="0"></a>
+              <a href="https://ibb.co.com/CBZcw7k"><img src="https://i.ibb.co.com/v1GFcP7/buku-3.jpg" alt="buku-3" border="0" class="img-fluid rounded"></a>
 
               </div>
             </div>
@@ -122,12 +121,26 @@
 
       <footer class="akhir">
         <div class="p-5">          
-          <div class="row">
-            <div class="col-lg-6 col-12">
+          <div class="row mb-3">
+            <div class="col-lg-8 col-12">
               <h1>Library App</h1>
               <p> Aplikasi perpustakaan adalah asisten pribadi Anda dalam menemukan buku-buku menarik, melacak status peminjaman, dan mengelola koleksi bacaan Anda.</p>
             </div>
+            <div class="col-lg-4 col-12">
+              <h1>Menu</h1>
+              <div class="menu">
+                <a href="#beranda">Beranda</a><br>
+                <a href="#tentang">Tentang</a><br>
+                <a href="#buku">Buku</a>
+              </div>
+            </div>
           </div>
+          <hr>
+
+          <div class="cp">
+            <div>
+              <span>© Copyright 2024 . Made by Delia Aprilyani</span>
+            </div>
         </div>
       </footer>
 

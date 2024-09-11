@@ -1,8 +1,9 @@
-    *{
+    * {
         top: 0;
         padding: 0;
     }
-    .bg-holder img{
+
+    .bg-holder img {
         position: absolute;
         width: 100%;
         min-height: 100%;
@@ -10,19 +11,17 @@
         background-position: center;
         background-repeat: no-repeat;
     }
-    .navbar{
+
+    .navbar {
         background-color: #fff;
-        /* height: 65px;
-        margin: 20px;
-        border-radius: 16px;
-        padding: 0.5rem; */
     }
-    .navbar-brand{
+
+    .navbar-brand {
         font-weight: 500;
         font-size: 35px;
     }
 
-    .login-button{
+    .login-button {
         background-color: black;
         color: #fff;
         font-size: 14px;
@@ -32,34 +31,55 @@
         transition: 0.3s background-color;
     }
 
-    .login-button:hover{
+    .login-button:hover {
         background-color: white;
         color: black;
         border: 1px solid black;
     }
 
-    .navbar-toggler{
+    .navbar-toggler {
         border: none;
         font-size: 1.25rem;
     }
 
-    .navbar-toggler:focus .btn-close:focus{
+    .navbar-toggler:focus .btn-close:focus {
         box-shadow: none;
         outline: none;
     }
 
-    .nav-link{
+    .nav-link {
         color: #666777;
         font-weight: 500;
         position: relative;
     }
 
-    .nav-link:hover, .nav-link.active{
+    .nav-link:hover,
+    .nav-link.active {
         color: #000;
     }
 
+    .akhir {
+        height: auto;
+        width: 100%;
+        background-color: #FCDE70;
+        color: black;
+    }
+
+    .menu a{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        line-height: 1px;
+    }
+
+    footer .cp {
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+    }
+
     @media (min-width:991px) {
-        .nav-link::before{
+        .nav-link::before {
             content: "";
             position: absolute;
             bottom: 0;
@@ -71,25 +91,26 @@
             visibility: hidden;
             transition: 0.3s ease-in-out;
         }
-        
-        .nav-link:hover::before, .nav-link.active::before{
+
+        .nav-link:hover::before,
+        .nav-link.active::before {
             width: 100%;
             visibility: visible;
         }
     }
 
-    .main{
+    .main {
         background-image: url('/image/perpus.jpg');
-        background-size: cover; /* Agar gambar menutupi seluruh background */
+        background-size: cover;
         width: 100%;
         height: 100vh;
         display: flex;
-        align-items: center;     /* Untuk mengatur secara vertikal */
-        position: relative;      /* Agar ::before berfungsi dengan benar */
+        align-items: center;
+        position: relative;
     }
 
-    .main::before{
-        background-color: rgba(0,0,0,0.6);
+    .main::before {
+        background-color: rgba(0, 0, 0, 0.6);
         content: "";
         position: absolute;
         top: 0;
@@ -98,45 +119,42 @@
         left: 0;
     }
 
-    .teks{
+    .teks {
         display: flex;
         align-items: center;
         padding: 50px;
         position: relative;
-        z-index: 1; /* Agar teks berada di atas overlay */
+        z-index: 1;
+        /* Agar teks berada di atas overlay */
     }
 
-    .judul h1{
-        color: white; /* Agar teks terlihat jelas */
+    .judul h1 {
+        color: white;
+        /* Agar teks terlihat jelas */
         font-size: 2.5rem;
     }
 
-    .judul span{
-        color: white; /* Agar teks terlihat jelas */
+    .judul span {
+        color: white;
+        /* Agar teks terlihat jelas */
         font-size: 1rem;
     }
 
-    .judul i{
+    .judul i {
         margin-right: 10px;
         margin-left: 10px;
     }
 
-    /* .book{
-        height: 100vh;
-        width: 100%;
-        background-color: #fff;
-    } */
-
-    .kotak{
+    .kotak {
         padding: 60px;
     }
 
-    .tmbl{
+    .tmbl {
         display: flex;
         justify-content: center;
     }
 
-    .tmbl button{
+    .tmbl button {
         background-color: black;
         color: #fff;
         font-size: 14px;
@@ -147,52 +165,25 @@
         margin-top: 15px;
     }
 
-    .tmbl button:hover{
+    .tmbl button:hover {
         background-color: white;
         color: black;
         border: 1px solid black;
     }
 
-    .box img{
+    .box img {
         transition: transform 0.5s;
     }
 
-    .box img:hover{
+    .box img:hover {
         transform: scale(1.1);
     }
 
-    .akhir{
-        height: 300px;
-        width: 100%;
-        background-color: #FCDE70;
-        color: white;
-    }
 
-    /* .long{
-        background-color: #666777;
-    height: 150px;
-    position: absolute;  
-    top: 88%;            
-    z-index: 1;       
-    width: 80%;
-    border-radius: 10px;
-    } */
 
-    .about{
+    .about {
         height: 100%;
         width: 100%;
         margin-top: 10%;
         border-radius: 10px;
     }
-
-
-    /* @media (max-width: 768px) {
-        .long {
-            width: 90%;             
-            top: 85%;               
-            height: 120px;          
-            left: 5%;               
-            right: 5%;
-            border-radius: 8px;     
-        }
-    } */

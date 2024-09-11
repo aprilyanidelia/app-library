@@ -119,7 +119,7 @@ class Buku2Controller extends Controller
 
     public function destroy(string $id)
     {
-        buku::find($id)->delete();
+        buku::where('id', $id)->delete();
         return redirect('/dashboard')->with('delete','Data telah dihapus!!');
     }
 
@@ -130,8 +130,8 @@ class Buku2Controller extends Controller
         ]);
     }
 
-    public function data_staff(){
-        return view('dashboard.staff.dataStaff');
-    }
+    // public function data_staff(){
+    //     return view('dashboard.staff.dataStaff');
+    // }
 
 }
