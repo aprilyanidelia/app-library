@@ -61,3 +61,8 @@ php artisan serve
 Gunakan kode dengan hati-hati.
 
 Akses aplikasi Anda melalui alamat yang ditampilkan di terminal, biasanya http://127.0.0.1:8000.
+
+7. Menjalankan Seeder
+Untuk menjalankan seeder secara manual, gunakan perintah artisan berikut:
+
+php artisan db:seed --class=DatabaseSeeder
