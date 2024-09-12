@@ -68,6 +68,7 @@ Route::group(['middleware'=>'auth'], function(){
     Route::delete('/dashboard/{dashboard}',[Buku2Controller::class,'destroy'])->name('dashboard.destroy');
     Route::get('/data_user',[Buku2Controller::class,'data']);
     Route::get('/data_staff',[Buku2Controller::class,'data_staff']);
+    Route::get('/add_staff',[Buku2Controller::class,'add_staff']);
 
     Route::get('/kategori',[CategoryController::class,'index'])->name('kategori.index');
     Route::post('/kategori',[CategoryController::class,'store'])->name('kategori.store');

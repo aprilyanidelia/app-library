@@ -1,7 +1,16 @@
 @extends('layout.index')
 
 @section('container')
-<h2>Data petugas</h2>
+<div class="d-flex justify-content-between">
+  <div>
+    <h2 class="mb-4">Data petugas</h2>
+  </div>
+  <div>
+    <a href="/add_staff">
+      <button type="submit" class="btn btn-dark">Tambah petugas</button>
+    </a>
+  </div>
+</div>
 
 <style>
   .table {

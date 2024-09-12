@@ -27,6 +27,14 @@
                         <span>Kategori</span>
                     </a>
                 </li>
+                @can('is_admin')
+                <li class="sidebar-item">
+                    <a href="/data_staff" class="sidebar-link">
+                      <i class='bx bxs-user'></i> 
+                        <span>Data Petugas</span>
+                    </a>
+                </li>
+                @endcan
                 @can('is_staff')
                 <li class="sidebar-item">
                     <a href="/pengembalian" class="sidebar-link">
