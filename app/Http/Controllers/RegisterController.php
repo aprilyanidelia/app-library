@@ -66,4 +66,10 @@ class RegisterController extends Controller
         }
         return redirect('/data_staff');
     }
+
+    public function hapus(string $id)
+    {
+        User::where('id',$id)->delete();
+        return redirect('/data_user');
+    }
 }

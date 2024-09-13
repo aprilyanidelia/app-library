@@ -29,9 +29,9 @@
                 <th scope="col">Nama lengkap</th>
                 <th scope="col">Alamat</th>
                 <th scope="col">Email</th>
-                <!-- @can('is_admin')
+                @can('is_admin')
                 <th scope="col">Keterangan</th>
-                @endcan -->
+                @endcan
             </tr>
         </thead>
         <tbody>
@@ -42,22 +42,19 @@
                 <td>{{$data->nm_lengkap}}</td>
                 <td>{{$data->alamat}}</td>
                 <td>{{$data->email}}</td>
-                <!-- @can('is_admin')
+                @can('is_admin')
                 <td>
-                    <div class="d-flex justify-content-center gap-3">
-                        <div class="edit">
-                            <a href="">
-                                edit
-                            </a>
-                        </div>
+                    <div class="d-flex justify-content-center">
                         <div class="hapus">
-                            <a href="">
-                                hapus
-                            </a>
+                            <form action="{{route ('data.hapus', ['data_user'=> $data->id])}}" method="post">
+                                @method('delete')
+                                @csrf
+                                <button class="btn btn-danger">Hapus</button>
+                            </form>
                         </div>
                     </div>
                 </td>
-                @endcan -->
+                @endcan
             </tr>
             @endforeach
         </tbody>

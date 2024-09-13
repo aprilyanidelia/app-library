@@ -71,6 +71,7 @@ Route::group(['middleware'=>'auth'], function(){
     Route::get('/add_staff',[RegisterController::class,'add_staff']);
     Route::post('/add_staff',[RegisterController::class,'reg_staff'])->name('staff.reg_staff');
     Route::delete('/data_staff/{data_staff}',[RegisterController::class,'destroy'])->name('staff.destroy');
+    Route::delete('/data_user/{data_user}',[RegisterController::class,'hapus'])->name('data.hapus');
 
     Route::get('/kategori',[CategoryController::class,'index'])->name('kategori.index');
     Route::post('/kategori',[CategoryController::class,'store'])->name('kategori.store');

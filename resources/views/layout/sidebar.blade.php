@@ -17,7 +17,7 @@
                 </li>
                 <li class="sidebar-item">
                     <a href="/data_user" class="sidebar-link">
-                      <i class='bx bxs-data'></i>
+                        <i class='bx bxs-user-badge'></i>
                         <span>Data user</span>
                     </a>
                 </li>
@@ -51,10 +51,11 @@
                     </a>
                 </li>
                 @endcan
-            </ul>
-            <div class="sidebar-footer">
-                <a href="/" class="sidebar-link">
+                <li class="sidebar-item">
+                <a href="/" class="sidebar-link" style="color: red;">
                   <i class='bx bx-log-out'></i>
                     <span>Logout</span>
                 </a>
-            </div>
+
+                </li>
+            </ul>
