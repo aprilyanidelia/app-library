@@ -18,7 +18,7 @@ body{
 
 .teks{
     position: absolute;
-    background-color: rgba(240, 248, 255, 0.603);
+    background-color: rgba(240, 248, 255, 0.705);
     width: 25%;
     height: 450px;
     border-radius: 15px;
@@ -47,18 +47,4 @@ form input:focus{
 .btn1 button:active{
     background-color: rgb(59, 59, 59);
     color: antiquewhite;
-}
-
-.btn2 button{
-    width: 100%;
-    padding: 8px;
-    border: 0;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-}
-
-.btn2 button:active{
-    background-color: rgb(206, 206, 206);
-    color: rgb(32, 32, 32);
 }

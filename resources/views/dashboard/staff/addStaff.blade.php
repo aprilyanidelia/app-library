@@ -19,36 +19,33 @@
       <div class="p-3">
         <h4 class="text-center mb-4 mt-2">Register Staff</h4>
         <div class="container">
-          <form action="">
+          <form method="post" action="{{ route('staff.reg_staff') }}" >
+            @csrf
             <div class="mb-3">
               <!-- <label for="">Email</label><br> -->
-              <input type="text" placeholder="Nama">
+              <input type="text" placeholder="Nama" name="nm_lengkap" id="nm_lengkap">
             </div>
             <div class="mb-3">
               <!-- <label for="">Email</label><br> -->
-              <input type="text" placeholder="Username">
+              <input type="text" placeholder="Username" name="username" id="username">
             </div>
             <div class="mb-3">
               <!-- <label for="">Email</label><br> -->
-              <input type="password" placeholder="Password">
+              <input type="password" placeholder="Password" name="password" id="password">
             </div>
             <div class="mb-3">
               <!-- <label for="">Email</label><br> -->
-              <input type="email" placeholder="Email">
+              <input type="email" placeholder="Email" name="email" id="email">
             </div>
             <div class="mb-4">
               <!-- <label for="">Email</label><br> -->
-              <input type="text" placeholder="Alamat">
+              <input type="text" placeholder="Alamat" name="alamat" id="alamat">
             </div>
-              <div>
-                <a class="btn1" href="">
-                  <button type="submit" class="mb-2">Submit</button>
-                </a>
-                <a class="btn2" href="/data_staff">
-                <button type="submit">Kembali</button>
-                </a>
-              </div>
+            <button class="btn btn-warning mb-2 mt-2" style="width: 100%;" type="submit">Submit</button>
           </form>
+          <div>                
+            <a href="/data_staff" class="btn btn-dark" style="width: 100%;" type="submit">Kembali</a>
+          </div>
         </div>
       </div>
     </div>

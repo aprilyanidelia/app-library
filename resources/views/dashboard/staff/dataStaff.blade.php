@@ -25,21 +25,38 @@
     text-align: center;
     background-color: transparent !important;
   }
-
 </style>
 <table class="table">
-    <thead>
-        <tr>
-            <th>Username</th>
-            <th>Nama lengkap</th>
-            <th>Email</th>
-            <th>Alamat</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            
-        </tr>
-    </tbody>
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Nama lengkap</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Alamat</th>
+      <th>Opsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach ($data_staff as $data)
+    <tr>
+      <td>{{$loop->iteration}}</td>
+      <td>{{$data->nm_lengkap}}</td>
+      <td>{{$data->username}}</td>
+      <td>{{$data->email}}</td>
+      <td>{{$data->alamat}}</td>
+      <td>
+        <div class="d-flex justify-content-center gap-2">
+          <button class="btn btn-warning">edit</button>
+          <form action="{{route ('staff.destroy',['data_staff'=>$data->id])}}" method="post">
+            @method('delete')
+            @csrf
+            <button class="btn btn-danger">hapus</button>
+          </form>
+        </div>
+      </td>
+    </tr>
+    @endforeach
+  </tbody>
 </table>
 @endsection

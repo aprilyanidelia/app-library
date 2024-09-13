@@ -131,11 +131,10 @@ class Buku2Controller extends Controller
     }
 
     public function data_staff(){
-        return view('dashboard.staff.dataStaff');
-    }
-
-    public function add_staff(){
-        return view('dashboard.staff.addStaff');
+        $data_staff=User::where('role',['petugas'])->get();
+        return view('dashboard.staff.dataStaff',[
+            'data_staff'=>$data_staff
+        ]);
     }
 
 
